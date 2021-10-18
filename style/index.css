@@ -6,7 +6,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 body {
   font-size: 1.6rem;
@@ -299,12 +299,15 @@ body::-webkit-scrollbar-track:active {
 
 .footer {
   display: flex;
-  background-color: #191c32;
+  background-color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 20rem;
+}
+.content-footer {
+  margin-top: 2rem;
 }
 .content-footer h2 {
   font-size: 5rem;
@@ -319,4 +322,9 @@ i {
   justify-content: space-evenly;
   width: 30rem;
   height: 30rem;
+}
+@media only screen and (min-width: 900px) {
+  .hamburguesa--icon {
+    display: none;
+  }
 }

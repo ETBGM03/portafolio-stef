@@ -1,109 +1,109 @@
-@media only screen and (max-width: 600px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    font-family: "Roboto", sans-serif;
-    font-size: 62.5%;
-    overflow-x: hidden;
-  }
-  body {
-    font-size: 1.6rem;
-    overflow-x: hidden;
-  }
-  body::-webkit-scrollbar {
-    width: 1.2rem;
-    height: 5px;
-    border-radius: 0.8rem;
-  }
-  body::-webkit-scrollbar-thumb {
-    background: #191c32;
-    border-radius: 4px;
-  }
-
-  /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-  body::-webkit-scrollbar-thumb:hover {
-    background: #b3b3b3;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  }
-
-  /* Cambiamos el fondo cuando esté en active */
-  body::-webkit-scrollbar-thumb:active {
-    background-color: #999999;
-  }
-
-  /* Ponemos un color de fondo y redondeamos las esquinas del track */
-  body::-webkit-scrollbar-track {
-    background: #e1e1e1;
-    border-radius: 4px;
-  }
-
-  /* Cambiamos el fondo cuando esté en active o hover */
-  body::-webkit-scrollbar-track:hover,
-  body::-webkit-scrollbar-track:active {
-    background: #d4d4d4;
-  }
-  .wrapper {
-    background-color: #191c32;
-    color: white;
-    height: 100vh;
-    width: 100vw;
-  }
-  .hamburguesa {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .brand h2 {
-    font-size: 4rem;
-  }
-  .brand span {
-    color: aqua;
-  }
-  .hamburguesa--icon {
-    width: 6rem;
-    height: 4rem;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-  .fas {
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  .nav {
-    position: relative;
-  }
-  .nav .nav--menu {
-    position: absolute;
-    width: 100%;
-    height: 80.5vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    transform: translateX(100%);
-    transition: all 1s;
-    margin-top: 6rem;
-  }
-  .nav .nav--menu li {
-    list-style: none;
-  }
-  .nav .nav--menu li a {
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-  }
-  .nav .nav--menu li a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-  .nav .nav__menu--togle {
-    transform: translateX(-3.5%);
-    transition: all 1s;
-  }
+/* @media only screen and (min-width: 600px) { */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 1.2rem;
+  height: 5px;
+  border-radius: 0.8rem;
+}
+body::-webkit-scrollbar-thumb {
+  background: #191c32;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+body::-webkit-scrollbar-track {
+  background: #e1e1e1;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+body::-webkit-scrollbar-track:hover,
+body::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+.wrapper {
+  background-color: #191c32;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.hamburguesa {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.brand h2 {
+  font-size: 4rem;
+}
+.brand span {
+  color: aqua;
+}
+.hamburguesa--icon {
+  width: 6rem;
+  height: 4rem;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.fas {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.nav {
+  position: relative;
+}
+.nav .nav--menu {
+  position: absolute;
+  width: 100%;
+  height: 80.5vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  transform: translateX(100%);
+  transition: all 1s;
+  margin-top: 6rem;
+}
+.nav .nav--menu li {
+  list-style: none;
+}
+.nav .nav--menu li a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+.nav .nav--menu li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.nav .nav__menu--togle {
+  transform: translateX(-3.5%);
+  transition: all 1s;
+}
+/* } */

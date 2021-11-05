@@ -24,17 +24,22 @@
     <link
       rel="stylesheet"
       href="./style/mobile.css"
-      media="(min-width: 320px)"
+      media="(min-width: 300px)"
     />
     <link
       rel="stylesheet"
       href="./style/tablets.css"
-      media="(min-width: 480px)"
+      media=" only screen and (min-width: 480px) and (max-width:768px)"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="./style/tablets.css"
+      media="(min-width: 480px)"
+    /> -->
     <link
       rel="stylesheet"
       href="./style/desktop.css"
-      media="(min-width: 1024px)"
+      media="only screen and (min-width: 1024px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,12 +68,12 @@
             </div>
           </div>
           <ul class="nav--menu" id="menu">
-            <li class=""><a class="active" href="#home">Home</a></li>
-            <li class=""><a class="active" href="#aboutMe">About Me</a></li>
-            <li class="">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a class="active" href="#aboutMe">About Me</a></li>
+            <li>
               <a class="active" href="#myPortfolio">Portfolio</a>
             </li>
-            <li class=""><a class="active" href="#contacMe">Contact Me</a></li>
+            <li><a class="active" href="#contacMe">Contact Me</a></li>
           </ul>
         </nav>
       </header>
@@ -81,13 +86,12 @@
             Currently I keep studying to improve my technical skills.
           </p>
           <a
+            class="download-cv"
             download="Curriculum-Esteban-Gomez"
             href="./cv/HojaDeVida.docx.pdf"
             title="Currículum Esteban Gómez"
           >
-            <button class="download-cv">
-              <i class="fas fa-arrow-alt-circle-down descargar"></i> Download CV
-            </button>
+            <i class="fas fa-arrow-alt-circle-down descargar"></i> Download CV
           </a>
         </div>
       </main>
@@ -109,7 +113,7 @@
           I'm passionate about the world of programming, generally web
           technologies, of course every day i'm in constant learning. I'm a
           trustworthy person, with good principles, willing to help others, also
-          to grow personally
+          to grow personally.
         </p>
       </div>
     </div>

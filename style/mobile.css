@@ -12,34 +12,6 @@ body {
   font-size: 1.6rem;
   overflow-x: hidden;
 }
-body::-webkit-scrollbar {
-  width: 1.2rem;
-  height: 5px;
-  border-radius: 0.8rem;
-}
-body::-webkit-scrollbar-thumb {
-  background: #191c32;
-  border-radius: 4px;
-}
-/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-body::-webkit-scrollbar-thumb:hover {
-  background: #b3b3b3;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-/* Cambiamos el fondo cuando esté en active */
-body::-webkit-scrollbar-thumb:active {
-  background-color: #999999;
-}
-/* Ponemos un color de fondo y redondeamos las esquinas del track */
-body::-webkit-scrollbar-track {
-  background: #e1e1e1;
-  border-radius: 4px;
-}
-/* Cambiamos el fondo cuando esté en active o hover */
-body::-webkit-scrollbar-track:hover,
-body::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
-}
 .wrapper {
   background-color: #191c32;
   color: white;
@@ -52,13 +24,14 @@ body::-webkit-scrollbar-track:active {
 }
 .brand h2 {
   font-size: 4rem;
+  padding-left: 0.6rem;
 }
 .brand span {
   color: aqua;
 }
 .hamburguesa--icon {
-  width: 6rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   justify-items: center;
   justify-content: center;
@@ -75,19 +48,22 @@ body::-webkit-scrollbar-track:active {
 .nav .nav--menu {
   position: absolute;
   width: 100%;
-  height: 81vh;
+  height: 80vh;
   display: grid;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  transform: translateX(100%);
+  background-color: #ffffff;
+  transform: translateX(200%);
   transition: all 1s;
+  top: 65px;
+  left: -2px;
 }
 .nav .nav--menu li {
   list-style: none;
 }
 .nav .nav--menu li a {
   font-size: 2rem;
+  font-weight: 450;
   text-decoration: none;
   color: black;
 }
@@ -97,7 +73,10 @@ body::-webkit-scrollbar-track:active {
 }
 .nav .nav__menu--togle {
   transform: translateX(0%);
-  transition: all 1s;
+  transition: ease-in-out 0.5s;
+}
+.ocultarBtn {
+  opacity: 0;
 }
 .content {
   width: 100vw;
@@ -114,25 +93,32 @@ h1 {
 .content .content__presentation {
   font-size: 2rem;
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 .download-cv {
   border: none;
   border-radius: 1rem;
   background-color: aqua;
   color: #000;
-  /* left: calc(50% - 105px); */
-  margin-left: 1rem;
+  position: relative;
+  left: calc(50% - 85px);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  /* bottom: calc(-100% + 15px); */
+  bottom: cal(-60% + 50px);
   height: 40px;
-  width: 220px;
+  width: 180px;
+  box-shadow: 0.5rem 0rem 3rem rgb(74, 75, 74);
 }
 .about-me {
   display: flex;
   flex-direction: column;
-  height: 160vh;
+  height: 125vh;
   justify-content: center;
   width: 100vw;
 }
 .about-me img {
+  border-radius: 1rem;
   height: 200px;
   margin: 0 auto;
   width: 200px;
@@ -166,20 +152,19 @@ h1 {
   color: #ffffff;
 }
 .container {
+  align-items: center;
   width: 100vw;
   height: inherit;
-  display: grid;
-  flex-wrap: wrap;
-  align-items: stretch;
-  grid-template-columns: repeat(8, 2fr);
-  grid-auto-rows: 420px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .card {
   width: 27rem;
   background-color: hsl(233, 69%, 19%);
   border-radius: 2rem;
   height: 35rem;
-  grid-column: 2/8;
+  margin: 1rem;
 }
 .card:hover {
   box-shadow: 0px 2px 5px rgba(170, 167, 167, 0.16),
@@ -264,7 +249,7 @@ h1 {
 .textarea {
   padding-left: 1rem;
   padding-top: 1rem;
-  border-color: #191c32;
+  border: 2px solid #191c32;
   border-radius: 1rem;
   outline: none;
   width: 90%;
@@ -278,9 +263,9 @@ h1 {
   outline: none;
   background-color: aqua;
   position: relative;
-  top: 10px;
+  bottom: calc(14% - 85px);
   font-size: 1.7rem;
-  font-weight: 450;
+  font-weight: 500;
 }
 
 .footer {

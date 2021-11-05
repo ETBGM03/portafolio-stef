@@ -1,4 +1,3 @@
-/* @media only screen and (min-width: 600px) { */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,42 +8,6 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
-body {
-  font-size: 1.6rem;
-  overflow-x: hidden;
-}
-body::-webkit-scrollbar {
-  width: 1.2rem;
-  height: 5px;
-  border-radius: 0.8rem;
-}
-body::-webkit-scrollbar-thumb {
-  background: #191c32;
-  border-radius: 4px;
-}
-
-/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
-body::-webkit-scrollbar-thumb:hover {
-  background: #b3b3b3;
-  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-/* Cambiamos el fondo cuando esté en active */
-body::-webkit-scrollbar-thumb:active {
-  background-color: #999999;
-}
-
-/* Ponemos un color de fondo y redondeamos las esquinas del track */
-body::-webkit-scrollbar-track {
-  background: #e1e1e1;
-  border-radius: 4px;
-}
-
-/* Cambiamos el fondo cuando esté en active o hover */
-body::-webkit-scrollbar-track:hover,
-body::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
-}
 .wrapper {
   background-color: #191c32;
   color: white;
@@ -54,18 +17,19 @@ body::-webkit-scrollbar-track:active {
 .hamburguesa {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 .brand h2 {
   font-size: 4rem;
+  padding-left: 0.6rem;
 }
 .brand span {
   color: aqua;
 }
 .hamburguesa--icon {
-  width: 6rem;
-  height: 4rem;
+  width: 5rem;
+  height: 3rem;
   display: flex;
+  padding-top: 1.5rem;
   justify-items: center;
   justify-content: center;
   align-content: center;
@@ -78,32 +42,254 @@ body::-webkit-scrollbar-track:active {
 .nav {
   position: relative;
 }
-.nav .nav--menu {
+.nav--menu {
   position: absolute;
   width: 100%;
-  height: 80.5vh;
+  top: -15rem;
+  height: 55vh;
   display: grid;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  transform: translateX(100%);
+  background: #ffffff;
+  transform: translateY(100%);
   transition: all 1s;
-  margin-top: 6rem;
+  top: -35px;
+  left: 15px;
 }
-.nav .nav--menu li {
+.nav--menu li {
   list-style: none;
 }
-.nav .nav--menu li a {
-  font-size: 2rem;
+.nav--menu li a {
+  font-size: 1rem;
+  font-weight: 450;
   text-decoration: none;
   color: black;
 }
-.nav .nav--menu li a:hover {
+.nav--menu li a:hover {
   cursor: pointer;
   text-decoration: underline;
 }
-.nav .nav__menu--togle {
-  transform: translateX(-3.5%);
-  transition: all 1s;
+.nav--menu .nav__menu--togle {
+  transform: translateX(0%);
+  transition: ease-in 0.3s;
 }
-/* } */
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.content .content__presentation {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.ocultarBtn {
+  opacity: 0;
+}
+.download-cv {
+  border: none;
+  border-radius: 1rem;
+  background-color: aqua;
+  color: #000;
+  position: relative;
+  left: calc(50% - 85px);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  top: calc(60% - 200px);
+  height: 40px;
+  width: 180px;
+  box-shadow: 0.5rem 0rem 3rem rgb(74, 75, 74);
+}
+.about-me {
+  display: flex;
+  flex-direction: column;
+  height: 125vh;
+  justify-content: center;
+  width: 100vw;
+}
+.about-me img {
+  border-radius: 1rem;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+}
+.about-info {
+  padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 2rem;
+}
+.divider {
+  border-bottom: 3px solid aqua;
+  height: 4px;
+  width: 40vw;
+  margin-bottom: 2.5rem;
+}
+.portfolio {
+  width: 100vw;
+  display: inline-block;
+  height: auto;
+  background-color: #191c32;
+}
+.portfolio-head {
+  display: flex;
+  justify-content: flex-start;
+  width: 110vw;
+  display: inline-block;
+  padding: 2rem 3rem;
+}
+.portfolio-head h2 {
+  color: #ffffff;
+}
+.container {
+  align-items: center;
+  width: 100vw;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.card {
+  max-width: 26rem;
+  background-color: hsl(233, 69%, 19%);
+  border-radius: 2rem;
+  max-height: 35rem;
+  margin: 1rem;
+}
+.card:hover {
+  box-shadow: 0px 2px 5px rgba(170, 167, 167, 0.16),
+    0px 2px 10px rgba(41, 40, 40, 0.12);
+  transition: ease-in 0.4s;
+}
+.card__img {
+  width: 100%;
+  height: 15rem;
+  background-image: url("./../images/img-ejemplo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+}
+.card__title {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card__projects--links {
+  display: flex;
+  justify-content: space-around;
+}
+.card__projects--links a {
+  color: white;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+.card__projects--links i {
+  font-size: 2rem;
+}
+.viewProject {
+  background-color: aqua;
+  border-radius: 1.4rem;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: calc(50% - 75px);
+  top: 40px;
+}
+.viewProject a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000000;
+}
+.contact-me {
+  height: 100vh;
+  width: 110vw;
+  background-color: #ffffff;
+}
+.contact-head {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+.input {
+  max-height: 40px;
+  min-height: 30px;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  border-color: #191c32;
+  outline: none;
+  max-width: 90%;
+  margin: 1rem 0;
+}
+.textarea {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border: 2px solid #191c32;
+  border-radius: 1rem;
+  outline: none;
+  max-width: 90%;
+}
+
+.enviar {
+  height: 45px;
+  width: 180px;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  background-color: aqua;
+  position: relative;
+  bottom: calc(14% - 85px);
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.footer {
+  width: 100vw;
+  height: 60vh;
+  display: inline-block;
+  padding: 1rem;
+  background-color: #191c32;
+}
+.content-footer {
+  text-align: center;
+  width: 100%;
+}
+.content-footer h2 {
+  font-size: 3.5rem;
+}
+.content-footer h4 {
+  font-size: 3rem;
+}
+.social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-network a {
+  margin: 2.5rem 2rem;
+  font-size: 4rem;
+}
+#trucazo {
+  opacity: 0;
+}
+#form-contact {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

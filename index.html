@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>@Stefernant</title>
     <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
       name="keywords"
       content="Esteban Gomez Fernandez portafolio personal"
     />
-    <meta name="author" content="Esteban Gomez software developer " />
+    <meta name="author" content="Esteban Gomez Front-End Developer" />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
@@ -24,22 +24,17 @@
     <link
       rel="stylesheet"
       href="./style/mobile.css"
-      media="(min-width: 300px)"
+      media="only screen and (max-width:500px)"
     />
     <link
       rel="stylesheet"
       href="./style/tablets.css"
-      media=" only screen and (min-width: 480px) and (max-width:768px)"
+      media=" only screen and (max-width:700px)"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="./style/tablets.css"
-      media="(min-width: 480px)"
-    /> -->
     <link
       rel="stylesheet"
       href="./style/desktop.css"
-      media="only screen and (min-width: 1024px)"
+      media="only screen and (min-width: 701px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,35 +51,34 @@
     <link rel="shortcut icon" href="./images/favicon.PNG" type="image/x-icon" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <nav class="nav">
-          <div class="hamburguesa">
-            <div class="brand">
-              <h2>Stefe<span>rnant</span></h2>
-            </div>
-            <div class="hamburguesa--icon" id="menuResponsive">
-              <i class="fas fa-bars"></i>
-            </div>
+    <header>
+      <nav class="nav">
+        <div class="hamburguesa">
+          <div class="brand">
+            <h2>Stefe<span>rnant</span></h2>
           </div>
-          <ul class="nav--menu" id="menu">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a class="active" href="#aboutMe">About Me</a></li>
-            <li>
-              <a class="active" href="#myPortfolio">Portfolio</a>
-            </li>
-            <li><a class="active" href="#contacMe">Contact Me</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="main" id="home">
-        <div class="content">
-          <br />
-          <h1>Hi, I'm <span>Esteban</span> Gómez</h1>
-          <p class="content__presentation">
-            i'm a web developer, with experience in various technologies.
-            Currently I keep studying to improve my technical skills.
-          </p>
+          <div class="hamburguesa--icon" id="menuResponsive">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="nav--menu" id="menu">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#AboutMe">About Me</a></li>
+          <li>
+            <a href="#Portfolio">Portfolio</a>
+          </li>
+          <li><a href="#ContacMe">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="infoMe" id="Home">
+        <h2>Hi! I'm Esteban Gómez Fernández</h2>
+        <p class="infoMe--description">
+          I'm a Front-End Developer, with experience in various technologies.
+          Currently I keep studying to improve my technical skills.
+        </p>
+        <div class="inforMe--downloadCv">
           <a
             class="download-cv"
             download="Curriculum-Esteban-Gomez"
@@ -94,137 +88,121 @@
             <i class="fas fa-arrow-alt-circle-down descargar"></i> Download CV
           </a>
         </div>
-      </main>
-    </div>
-    <div class="about-me" id="aboutMe">
-      <img
-        src="./images/fotoPersonal.JPG"
-        alt="Imágen de presentación personal"
-      />
-      <div class="about-info">
-        <h2>About Me</h2>
-        <div class="divider"></div>
-        <p>
-          My full name is Esteban Gómez Fernámdez, you can say me
-          <span>Stefernant</span>. i'm Colombian.
+      </section>
+      <section class="AboutMe" id="AboutMe">
+        <img
+          class="fotoMe"
+          src="./images/fotoPersonal.JPG"
+          alt="Imágen de presentación personal"
+        />
+        <h2 class="AboutMe--title">About Me</h2>
+        <!-- <div class="divider"></div> -->
+        <p class="AboutMe--desc">
+          My full name is Esteban Gómez Fernández, you can say me
+          <em>Stefernant</em>. i'm Colombian.
         </p>
         <br />
-        <p>
+        <p class="AboutMe--desc">
           I'm passionate about the world of programming, generally web
           technologies, of course every day i'm in constant learning. I'm a
           trustworthy person, with good principles, willing to help others, also
           to grow personally.
         </p>
-      </div>
-    </div>
-
-    <div class="portfolio" id="myPortfolio">
-      <div class="portfolio-head">
-        <h2>My Portfolio</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="container">
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>description proyecto</h2>
+      </section>
+      <section class="portfolio" id="Portfolio">
+        <div class="portfolio--head">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>Video player</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              Project in which we created a video player, with several
+              functionalities (forward, backward, play)
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://etbgm03.github.io/video-player/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
           </div>
-          <div class="card__projects--links">
-            <a
-              href="https://github.com/ETBGM03/video-player"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://etbgm03.github.io/video-player/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fas fa-globe-americas"></i
-            ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fa fa-code" aria-hidden="true"></i
-            ></a>
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>Clone homepage Google</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              project in which we create the initial page of the google search
+              engine, using css with flex, grid and more.
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://etbgm03.github.io/practico-html-css"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
           </div>
-          <div class="viewProject">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              >See Project</a
-            >
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>Course CSS GRID</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              project in which we create a landing page, using css grid.
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://etbgm03.github.io/proyecto-css-grid/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
           </div>
         </div>
-
-        <div class="card">
-          <div class="card__img"></div>
-          <div class="card__title">
-            <h2>description proyecto</h2>
-          </div>
-          <div class="card__projects--links">
-            <a
-              href="https://github.com/ETBGM03/video-player"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Primer proyecto de introduccion al desarrollo web"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://etbgm03.github.io/video-player/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fas fa-globe-americas"></i
-            ></a>
-            <a href="" target="_blank" rel="noopener noreferrer"
-              ><i class="fa fa-code" aria-hidden="true"></i
-            ></a>
-          </div>
-          <div class="viewProject">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              >See Project</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-me" id="contacMe">
-      <div class="contact-head">
+      </section>
+      <section class="contactMe" id="ContactMe">
         <h2>Contact Me</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="contact-main">
-        <form class="form" id="form-contact">
-          <input
-            class="input"
-            name="name"
-            type="text"
-            placeholder="Name"
-            required
-          />
-          <input
-            class="input"
-            name="email"
-            type="email"
-            placeholder="Email"
-            required
-          />
-          <textarea
-            class="textarea"
-            id="message"
-            name="message"
-            cols="30"
-            rows="10"
-            placeholder="Place your message here"
-            required
-          ></textarea>
-          <button type="submit" class="enviar" id="submitEmail">Send</button>
-        </form>
-      </div>
-      <a href="mailto:esfergo150618@gmail.com" id="trucazo">mail</a>
-    </div>
-
+        <div class="contact-main">
+          <form class="form" id="form-contact">
+            <input
+              class="input"
+              name="name"
+              type="text"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="textarea"
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Place your message here"
+              required
+            ></textarea>
+            <button type="submit" class="enviar" id="submitEmail">Send</button>
+          </form>
+        </div>
+        <a href="mailto:esfergo150618@gmail.com" id="trucazo">mail</a>
+      </section>
+    </main>
     <footer class="footer">
       <div class="content-footer">
         <h2>Esteban Gómez</h2>
-        <h4>Web Developer</h4>
+        <h4>Front-End Developer</h4>
       </div>
       <div class="social-network">
         <a

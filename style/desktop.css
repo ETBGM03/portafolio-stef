@@ -1,294 +1,235 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
-  overflow-y: clip;
+  overflow-x: hidden;
 }
-.wrapper {
+header {
   background-color: #191c32;
-  color: white;
-  height: 100vh;
-  width: 100vw;
 }
-
 .nav {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
 }
-
+.hamburguesa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand h2 {
+  font-size: 4rem;
+  padding-left: 0.6rem;
+  color: #ffffff;
+}
 .brand span {
   color: aqua;
 }
-/* .nav--menu {
-    background-color: green;
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 1rem;
-    width: 50%;
-  }
-
-  .nav--menu li {
-    list-style: none;
-  }
-  .nav--menu a {
-    color: white;
-    padding: 1rem 1.2rem;
-    text-decoration: none;
-  }
-
-  .nav--menu .active {
-    color: aqua;
-  }
-  .nav--menu .active:hover {
-    background-color: lightsalmon;
-    color: black;
-    transition: ease-in 0.4s;
-  }
-  .hamburguesa--icon {
-    opacity: 0;
-  }
-  .main {
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 80vh;
-    width: 81vw;
-    margin: 0 auto;
-  }
-
-  .content h1 {
-    font-size: 4.5rem;
-  }
-  .content span {
-    color: aqua;
-  }
-  .download-cv {
-    padding: 1rem 2rem;
-    background-color: aqua;
-    border: none;
-    border-radius: 1.5rem;
-    margin-top: 2rem;
-    box-shadow: 0.5rem 0rem 3rem rgb(74, 75, 74);
-  }
-  .download-cv:hover {
-    cursor: pointer;
-    background-color: #fff;
-    box-shadow: none;
-  }
-  .about-me img {
-    height: 22rem;
-    width: 22rem;
-  }
-
-  .about-me {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    align-items: center;
-    height: 100vh;
-  }
-  .about-me img {
-    width: 60%;
-    margin: 0 auto;
-    grid-column: 1/5;
-  }
-  .about-info {
-    grid-column: 5/10;
-    padding: 2rem;
-  }
-
-  .about-info h2 {
-    font-size: 4.5rem;
-    color: #191c32;
-  }
-  .about-info .divider {
-    background-color: rgb(39, 243, 209);
-    height: 0.4rem;
-    margin-bottom: 1.4rem;
-    width: 20rem;
-  }
-
-  .about-info p {
-    margin-bottom: 2rem;
-    font-weight: 400;
-  }
-  .portfolio {
-    background-color: #191c32;
-    width: 100vw;
-    color: #fff;
-  }
-  .portfolio-head .divider {
-    background-color: rgb(39, 243, 209);
-    height: 0.4rem;
-    margin-bottom: 1.4rem;
-    width: 13.2rem;
-  }
-
-  .portfolio-head {
-    width: 100vw;
-    padding: 6rem;
-  }
-  .portfolio-head h2 {
-    font-size: 4rem;
-  }
-
-  .container {
-    display: flex;
-    width: 80vw;
-    height: 80vh;
-    margin: 0 auto;
-    justify-content: center;
-  }
-  .card {
-    width: 30rem;
-    background-color: hsl(233, 69%, 19%);
-    border-radius: 2rem;
-    height: 35rem;
-    margin: 2rem;
-  }
-  .card:hover {
-    box-shadow: 0px 2px 5px rgba(196, 189, 189, 0.16),
-      0px 2px 10px rgba(0, 0, 0, 0.12);
-    transition: ease-in 0.4s;
-  }
-  .card__img {
-    width: 100%;
-    height: 15rem;
-    background-image: url("./../images/img-ejemplo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 1rem 1rem 0 0;
-  }
-  .card__title {
-    padding: 1.5rem;
-    text-align: center;
-  }
-
-  .card__projects--links {
-    display: flex;
-    justify-content: space-around;
-  }
-  .card__projects--links a {
-    color: white;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
-  .card__projects--links i {
-    font-size: 2rem;
-  }
-  .container-button {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  .download-cv a {
-    color: #191c32;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  .contact-me {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contact-head {
-    padding: 3rem;
-  }
-  .contact-head .divider {
-    background-color: rgb(39, 243, 209);
-    height: 0.4rem;
-    margin-bottom: 1.4rem;
-    width: 12.5rem;
-  }
-
-  .contact-head h2 {
-    font-size: 4.5rem;
-    color: #191c32;
-  }
-  .contact-main {
-    padding: 1rem;
-    width: 40vw;
-    height: 70vh;
-    margin: 0 auto;
-    background-color: #191c32;
-    border-radius: 2rem;
-  }
-  .form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .form .input {
-    width: 60%;
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: none;
-    color: white;
-    height: 3rem;
-    font-family: "Roboto", sans-serif;
-    margin: 1.5rem 0;
-    padding-left: 1rem;
-    outline-color: #191c32;
-  }
-
-  .form textarea {
-    font-family: "Roboto", sans-serif;
-    resize: none;
-    width: 60%;
-    background: none;
-    color: white;
-    outline-color: #191c32;
-    border-radius: 1.2rem;
-    height: 20rem;
-    padding: 1rem 1rem;
-  }
-  .form .enviar {
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 2rem;
-    background-color: aqua;
-    font-weight: 500;
-    border: none;
-  }
-  .form .enviar:hover {
-    cursor: pointer;
-  }
-
-  .footer {
-    display: flex;
-    background-color: #fff;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 20rem;
-  }
-  .content-footer {
-    margin-top: 2rem;
-  }
-  .content-footer h2 {
-    font-size: 5rem;
-  }
-  .content-footer h4,
-  i {
-    font-size: 3rem;
-  }
-  .social-network {
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    width: 30rem;
-    height: 30rem;
-  }*/
+.hamburguesa--icon {
+  display: none;
+}
+.fas {
+  cursor: pointer;
+  font-size: 3rem;
+}
+.nav .nav--menu {
+  width: 55rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav .nav--menu li {
+  list-style: none;
+  margin: 2rem;
+}
+.nav .nav--menu li a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 450;
+  text-decoration: none;
+}
+.nav .nav--menu li a:hover {
+  text-decoration: underline ;
+  cursor: pointer;
+}
+.infoMe {
+  align-items: center;
+  background-color: #191c32;
+  display: flex;
+  flex-direction: column;
+  height: 36rem;
+  justify-content: center;
+  padding: 1rem;
+  width: 100vw;
+}
+.infoMe > h2 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  max-width: 45rem;
+}
+.infoMe--description {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.inforMe--downloadCv a {
+  color: aqua;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.inforMe--downloadCv i {
+  font-size: 2.2rem;
+}
+.AboutMe {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  justify-content: center;
+  padding: 1rem;
+  width: 100vw;
+}
+.AboutMe .fotoMe {
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 15px rgb(132, 132, 132);
+  height: 45%;
+  margin-bottom: 1rem;
+  max-width: 280px;
+  width: 75%;
+}
+.AboutMe--title {
+  color: black;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.AboutMe--desc {
+  font-size: 1.8rem;
+}
+.portfolio {
+  background-color: #191c32;
+  height: inherit;
+  width: 100vw;
+}
+.portfolio--head > h2 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 2rem 0;
+  text-align: center;
+}
+.portfolio-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+  justify-content: center;
+  padding: 1.3rem;
+}
+.portfolio-item {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  place-content: center;
+}
+.portfolio--item__title {
+  font-size: 2rem;
+  color: #191c32;
+}
+.portfolio--item__desc {
+  color: #000;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.viewProject > a {
+  text-decoration: none;
+  color: rgb(14, 212, 196);
+  font-size: 1.5rem;
+}
+.contactMe {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 105 vh;
+  width: 100vw;
+}
+.contactMe > h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input {
+  font-family: "Roboto";
+  height: 4rem;
+  margin: 1rem 0;
+  outline-color: #191c32;
+  padding-left: 1rem;
+  width: 40rem;
+}
+.textarea {
+  padding: 1rem 1rem 0;
+  outline-color: #191c32;
+  font-family: "Roboto";
+  margin-bottom: 1.5rem;
+  width: 40rem;
+}
+#trucazo {
+  opacity: 0;
+}
+.enviar {
+  background-color: aqua;
+  border-radius: 1rem;
+  border: none;
+  font-size: 2.3rem;
+  font-weight: 700;
+  height: 45px;
+  outline: none;
+  width: 22rem;
+}
+.footer {
+  width: 100vw;
+  height: 60vh;
+  padding: 1rem;
+  background-color: #191c32;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.content-footer {
+  align-items: center;
+  width: 100%;
+}
+.content-footer h2 {
+  font-size: 3.5rem;
+}
+.content-footer h4 {
+  font-size: 3rem;
+}
+.social-network {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social-network > a {
+  margin: 2.5rem 2rem;
+  font-size: 4rem;
+  color: #fff;
+}

@@ -4,7 +4,7 @@ let menuResponsive = document.querySelector("#menuResponsive");
 let ocultarDownloadCv = document.querySelector(".download-cv");
 menuResponsive.addEventListener("click", () => {
   menu.classList.toggle("nav__menu--togle");
-  ocultarDownloadCv.classList.toggle("ocultarBtn");
+  // ocultarDownloadCv.classList.toggle("ocultarBtn");
 });
 
 // CODE FOR SEND EMAIL A USER

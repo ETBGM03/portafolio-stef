@@ -24,17 +24,18 @@
     <link
       rel="stylesheet"
       href="./style/mobile.css"
-      media="only screen and (max-width:500px)"
-    />
+      media="screen and (max-width:430px)"
+      />
     <link
       rel="stylesheet"
       href="./style/tablets.css"
-      media=" only screen and (max-width:700px)"
+      media="screen and (min-width:431px) and (max-width:800px)"
     />
+    
     <link
       rel="stylesheet"
       href="./style/desktop.css"
-      media="only screen and (min-width: 701px)"
+      media="screen and (min-width: 801px)"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -62,12 +63,10 @@
           </div>
         </div>
         <ul class="nav--menu" id="menu">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#AboutMe">About Me</a></li>
-          <li>
-            <a href="#Portfolio">Portfolio</a>
-          </li>
-          <li><a href="#ContacMe">Contact Me</a></li>
+          <li class="ocultarPrueba"><a href="#Home">Home</a></li>
+          <li class="ocultarPrueba"><a href="#AboutMe">About Me</a></li>
+          <li class="ocultarPrueba"><a href="#Portfolio">Portfolio</a></li>
+          <li class="ocultarPrueba"><a href="#ContactMe">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -75,14 +74,13 @@
       <section class="infoMe" id="Home">
         <h2>Hi! I'm Esteban Gómez Fernández</h2>
         <p class="infoMe--description">
-          I'm a Front-End Developer, with experience in various technologies.
-          Currently I keep studying to improve my technical skills.
+          Software developer with technical knowledge in Front end, with analytical capacity to solve challenges and errors, as well as teamwork, allowing to improve soft skills and technical skills.
         </p>
         <div class="inforMe--downloadCv">
           <a
             class="download-cv"
             download="Curriculum-Esteban-Gomez"
-            href="./cv/HojaDeVida.docx.pdf"
+            href="./cv/Esteban_Gomez_HV.pdf"
             title="Currículum Esteban Gómez"
           >
             <i class="fas fa-arrow-alt-circle-down descargar"></i> Download CV
@@ -90,16 +88,16 @@
         </div>
       </section>
       <section class="AboutMe" id="AboutMe">
-        <img
-          class="fotoMe"
-          src="./images/fotoPersonal.JPG"
-          alt="Imágen de presentación personal"
-        />
+          <img
+            class="fotoMe"
+            src="./images/fotoPersonal.JPG"
+            alt="Imágen de presentación personal"
+          />
         <h2 class="AboutMe--title">About Me</h2>
-        <!-- <div class="divider"></div> -->
+        <hr></hr>
         <p class="AboutMe--desc">
-          My full name is Esteban Gómez Fernández, you can say me
-          <em>Stefernant</em>. i'm Colombian.
+          My full name is Esteban Gómez Fernández, you can tell me
+          <em>Stefernant 🙂</em>. I'm Colombian.
         </p>
         <br />
         <p class="AboutMe--desc">
@@ -164,6 +162,70 @@
               >
             </div>
           </div>
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>Autocomplete twitter with ReactJs</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              project in which we create a autocomplete of twitter with ReactJS
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://autocomplete-twitter-react.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>Budget manager with react</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              project in which we create a Budget manager with ReactJS
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://admon-presupuesto-semanal.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>CRUD with ReactJS</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              project in which we create a CRUD of tasks with react
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://crud-reactjs-simple.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio--item__title">
+              <h2>ToDO Machine with ReactJS</h2>
+            </div>
+            <p class="portfolio--item__desc">
+              project in which we create a ToDo Machine with react
+            </p>
+            <div class="viewProject">
+              <a
+                href="https://todo-machine-raeact.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >See Functioning Project</a
+              >
+            </div>
+          </div>
         </div>
       </section>
       <section class="contactMe" id="ContactMe">
@@ -189,7 +251,7 @@
               id="message"
               name="message"
               cols="30"
-              rows="10"
+              rows="12"
               placeholder="Place your message here"
               required
             ></textarea>
@@ -204,8 +266,8 @@
         <h2>Esteban Gómez</h2>
         <h4>Front-End Developer</h4>
       </div>
-      <div class="social-network">
-        <a
+        <div class="social-network">
+          <a
           href="https://linkedin.com/in/estebangomezfernandez"
           target="_blank"
           rel="noopener noreferrer"

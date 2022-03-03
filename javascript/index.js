@@ -1,11 +1,21 @@
 // CODE FOR SET A NEW PROP IN CSS
 let menu = document.querySelector("#menu");
-let menuResponsive = document.querySelector("#menuResponsive");
-let ocultarDownloadCv = document.querySelector(".download-cv");
+// let ocultarDownloadCv = document.querySelector(".download-cv");
 menuResponsive.addEventListener("click", () => {
   menu.classList.toggle("nav__menu--togle");
-  // ocultarDownloadCv.classList.toggle("ocultarBtn");
 });
+// CODE TO HIDE TH NAVBAR
+let ocultarNavBar = document.querySelectorAll(".ocultarPrueba");
+ocultarNavBar.forEach((element) => {
+  element.addEventListener("click", () => {
+    menu.classList.remove("nav__menu--togle");
+  });
+})
+
+
+// addEventListener("click", () => {
+//   menu.classList.remove("nav__menu--togle");
+// })
 
 // CODE FOR SEND EMAIL A USER
 let form = document.querySelector("#form-contact");

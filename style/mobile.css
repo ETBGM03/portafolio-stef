@@ -7,6 +7,7 @@ html {
   font-family: "Roboto";
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -79,25 +80,30 @@ header {
   background-color: #191c32;
   display: flex;
   flex-direction: column;
-  height: 36rem;
+  height: 110vh;
   justify-content: center;
   padding: 1rem;
   width: 100vw;
+  margin-bottom: 3rem;
 }
 .infoMe > h2 {
   color: #ffffff;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 .infoMe--description {
   color: #ffffff;
   font-size: 2.5rem;
-  text-indent: left;
 }
 .inforMe--downloadCv a {
+  position: absolute;
+  left: calc(100px - 0%);
+  bottom: calc(100px - 38%);
   color: aqua;
   font-size: 1.8rem;
   text-decoration: none;
+  font-weight: bold;
 }
 .inforMe--downloadCv i {
   font-size: 2.2rem;
@@ -107,18 +113,16 @@ header {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  height: 120vh;
+  height: 130vh;
   justify-content: center;
-  padding: 1rem;
+  padding: 10px;
   width: 100vw;
 }
 .AboutMe .fotoMe {
   border-radius: 1.5rem;
   box-shadow: 5px 5px 15px rgb(132, 132, 132);
   height: 45%;
-  margin-bottom: 1rem;
-  max-width: 280px;
-  width: 75%;
+  width: 90%;
 }
 .AboutMe--title {
   color: black;
@@ -133,10 +137,12 @@ header {
   height: inherit;
   width: 100vw;
 }
+.portfolio--head {
+  padding-top: 2rem;
+}
 .portfolio--head > h2 {
   font-size: 3rem;
   color: #ffffff;
-  margin: 2rem 0;
   text-align: center;
 }
 .portfolio-grid {
@@ -175,12 +181,12 @@ header {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 105vh;
   width: 100vw;
 }
 .contactMe > h2 {
   font-size: 3rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .form {
   align-items: center;
@@ -194,13 +200,14 @@ header {
   margin: 1rem 0;
   outline-color: #191c32;
   padding-left: 1rem;
-  width: 24rem;
+  min-width: 100%;
 }
 .textarea {
   padding: 1rem 1rem 0;
   outline-color: #191c32;
   font-family: "Roboto";
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.8rem;
+  min-width: 100%;
 }
 #trucazo {
   opacity: 0;
@@ -217,25 +224,28 @@ header {
 }
 .footer {
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   padding: 1rem;
   background-color: #191c32;
-}
-.content-footer {
+  display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
 }
 .content-footer h2 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
+  width: 100%;
+  color: #fff;
 }
 .content-footer h4 {
-  font-size: 3rem;
+  font-size: 1.9rem;
+  width: 100%;
+  color: #fff;
 }
 .social-network {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 90px));
+  grid-gap: 1rem;
   justify-content: center;
-  align-items: center;
 }
 .social-network > a {
   margin: 2.5rem 2rem;
